@@ -11,19 +11,19 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AppContainerComponent,
-    BlogDetailComponent,
-    HeaderComponent,
-    FooterComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		AppContainerComponent,
+		BlogDetailComponent,
+		HeaderComponent,
+		FooterComponent
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
